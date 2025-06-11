@@ -6,6 +6,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Gilroy-Bold ☞"), url("../fonts/Gilroy-Bold.woff") format("woff");
+  font-display: swap;
 }
 
 @font-face {
@@ -14,6 +15,7 @@
   font-weight: normal;
   src: local("Gilroy-Medium ☞"),
     url("../fonts/Gilroy-Medium.woff") format("woff");
+    font-display: swap;
 }
 
 * {
