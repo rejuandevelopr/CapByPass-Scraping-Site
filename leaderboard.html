@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords"
+        content="data scraping, premium scraping infrastructure, data integration, scraping solutions, CapByPass">
+    <meta name="description"
+        content="CapByPass offers premium scraping infrastructure to unlock data and easily integrate solutions into your projects. Streamline your data scraping process with our cutting-edge technology.">
+    <title>Leaderboard | Dashboard | CapByPass</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.ico" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="dashboard-bg">
+    <main id="dashboardDesk">
+        <div class="desk-wrapper">
+            <!-- Desktop/Mobile View Sidebar Start  -->
+            <nav class="navstyle offcanvas offcanvas-start show-sidebar" tabindex="-1" data-bs-backdrop="true"
+                id="offcanvasExample" aria-modal="true" role="dialog">
+                <div>
+                    <div class="navbar-logo">
+                        <a href="leaderboard.html">
+                            <img src="assets/images/header/capBypass-logo.svg" width="183" height="53" alt="Brand Logo">
+                        </a>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em" x="0" y="0"
+                                viewBox="0 0 329.269 329" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                class="">
+                                <g>
+                                    <path
+                                        d="M194.8 164.77 323.013 36.555c8.343-8.34 8.343-21.825 0-30.164-8.34-8.34-21.825-8.34-30.164 0L164.633 134.605 36.422 6.391c-8.344-8.34-21.824-8.34-30.164 0-8.344 8.34-8.344 21.824 0 30.164l128.21 128.215L6.259 292.984c-8.344 8.34-8.344 21.825 0 30.164a21.266 21.266 0 0 0 15.082 6.25c5.46 0 10.922-2.09 15.082-6.25l128.21-128.214 128.216 128.214a21.273 21.273 0 0 0 15.082 6.25c5.46 0 10.922-2.09 15.082-6.25 8.343-8.34 8.343-21.824 0-30.164zm0 0"
+                                        fill="#5159A7" opacity="1" data-original="#5159A7"></path>
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="dashboard-links">
+                        <ul class="nav dash-nav mt-2">
+                            <li class="nav-item">
+                                <a href="overview.html" class="nav-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path id="dashboardIcon" fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M5 2.25C3.48122 2.25 2.25 3.48122 2.25 5V8C2.25 9.51878 3.48122 10.75 5 10.75H8C9.51878 10.75 10.75 9.51878 10.75 8V5C10.75 3.48122 9.51878 2.25 8 2.25H5ZM3.75 5C3.75 4.30964 4.30964 3.75 5 3.75H8C8.69036 3.75 9.25 4.30964 9.25 5V8C9.25 8.69036 8.69036 9.25 8 9.25H5C4.30964 9.25 3.75 8.69036 3.75 8V5Z"
+                                            fill="#101839" />
+                                        <path id="dashboardIcon" fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M5 13.25C3.48122 13.25 2.25 14.4812 2.25 16V19C2.25 20.5188 3.48122 21.75 5 21.75H8C9.51878 21.75 10.75 20.5188 10.75 19V16C10.75 14.4812 9.51878 13.25 8 13.25H5ZM3.75 16C3.75 15.3096 4.30964 14.75 5 14.75H8C8.69036 14.75 9.25 15.3096 9.25 16V19C9.25 19.6904 8.69036 20.25 8 20.25H5C4.30964 20.25 3.75 19.6904 3.75 19V16Z"
+                                            fill="#101839" />
+                                        <path id="dashboardIcon" fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M13.25 16C13.25 14.4812 14.4812 13.25 16 13.25H19C20.5188 13.25 21.75 14.4812 21.75 16V19C21.75 20.5188 20.5188 21.75 19 21.75H16C14.4812 21.75 13.25 20.5188 13.25 19V16ZM16 14.75C15.3096 14.75 14.75 15.3096 14.75 16V19C14.75 19.6904 15.3096 20.25 16 20.25H19C19.6904 20.25 20.25 19.6904 20.25 19V16C20.25 15.3096 19.6904 14.75 19 14.75H16Z"
+                                            fill="#101839" />
+                                        <path id="dashboardIcon" fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M16 2.25C14.4812 2.25 13.25 3.48122 13.25 5V8C13.25 9.51878 14.4812 10.75 16 10.75H19C20.5188 10.75 21.75 9.51878 21.75 8V5C21.75 3.48122 20.5188 2.25 19 2.25H16ZM14.75 5C14.75 4.30964 15.3096 3.75 16 3.75H19C19.6904 3.75 20.25 4.30964 20.25 5V8C20.25 8.69036 19.6904 9.25 19 9.25H16C15.3096 9.25 14.75 8.69036 14.75 8V5Z"
+                                            fill="#101839" />
+                                    </svg>
+                                    <span>Overview</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="referral.html" class="nav-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path id="dashboardIcon"
+                                            d="M3.64337 7.94061L3.52573 8.1H3.72383H20.2761H20.4742L20.3565 7.94061L17.7039 4.34676C17.4965 4.06581 17.1681 3.9 16.8189 3.9H7.18101C6.83181 3.9 6.50335 4.0658 6.29598 4.34676L3.64337 7.94061ZM3.78676 9.9H3.58408L3.7074 10.0608L11.127 19.7386C11.5673 20.3129 12.4326 20.3129 12.8729 19.7386L20.2925 10.0608L20.4158 9.9H20.2131H3.78676ZM19.1522 3.27783L22.0793 7.24358C22.8465 8.28311 22.8336 9.70485 22.0475 10.7302L14.3014 20.8337C13.1406 22.3478 10.8593 22.3478 9.69849 20.8337L1.95245 10.7302C1.16634 9.70485 1.15337 8.28311 1.92064 7.24358L4.84775 3.27783C5.39446 2.53712 6.26039 2.1 7.18101 2.1H16.8189C17.7395 2.1 18.6054 2.53712 19.1522 3.27783Z"
+                                            fill="#101839" stroke="white" stroke-width="0.2" />
+                                    </svg>
+                                    <span>Referral</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="billing.html" class="nav-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path id="dashboardIcon"
+                                            d="M17.74 22.75H6.26C3.77 22.75 1.75 20.73 1.75 18.24V11.51C1.75 9.02001 3.77 7 6.26 7H17.74C20.23 7 22.25 9.02001 22.25 11.51V12.95C22.25 13.36 21.91 13.7 21.5 13.7H19.48C19.13 13.7 18.81 13.83 18.58 14.07L18.57 14.08C18.29 14.35 18.16 14.72 18.19 15.1C18.25 15.76 18.88 16.29 19.6 16.29H21.5C21.91 16.29 22.25 16.63 22.25 17.04V18.23C22.25 20.73 20.23 22.75 17.74 22.75ZM6.26 8.5C4.6 8.5 3.25 9.85001 3.25 11.51V18.24C3.25 19.9 4.6 21.25 6.26 21.25H17.74C19.4 21.25 20.75 19.9 20.75 18.24V17.8H19.6C18.09 17.8 16.81 16.68 16.69 15.24C16.61 14.42 16.91 13.61 17.51 13.02C18.03 12.49 18.73 12.2 19.48 12.2H20.75V11.51C20.75 9.85001 19.4 8.5 17.74 8.5H6.26Z"
+                                            fill="#101839" />
+                                        <path id="dashboardIcon"
+                                            d="M2.5 13.16C2.09 13.16 1.75 12.82 1.75 12.41V7.84006C1.75 6.35006 2.69 5.00001 4.08 4.47001L12.02 1.47001C12.84 1.16001 13.75 1.27005 14.46 1.77005C15.18 2.27005 15.6 3.08005 15.6 3.95005V7.75003C15.6 8.16003 15.26 8.50003 14.85 8.50003C14.44 8.50003 14.1 8.16003 14.1 7.75003V3.95005C14.1 3.57005 13.92 3.22003 13.6 3.00003C13.28 2.78003 12.9 2.73003 12.54 2.87003L4.6 5.87003C3.79 6.18003 3.24 6.97006 3.24 7.84006V12.41C3.25 12.83 2.91 13.16 2.5 13.16Z"
+                                            fill="#101839" />
+                                        <path id="dashboardIcon"
+                                            d="M19.6005 17.7999C18.0905 17.7999 16.8105 16.6799 16.6905 15.2399C16.6105 14.4099 16.9105 13.5999 17.5105 13.0099C18.0205 12.4899 18.7205 12.2 19.4705 12.2H21.5505C22.5405 12.23 23.3005 13.0099 23.3005 13.9699V16.03C23.3005 16.99 22.5405 17.7699 21.5805 17.7999H19.6005ZM21.5305 13.7H19.4805C19.1305 13.7 18.8105 13.8299 18.5805 14.0699C18.2905 14.3499 18.1505 14.7299 18.1905 15.1099C18.2505 15.7699 18.8805 16.2999 19.6005 16.2999H21.5605C21.6905 16.2999 21.8105 16.18 21.8105 16.03V13.9699C21.8105 13.8199 21.6905 13.71 21.5305 13.7Z"
+                                            fill="#101839" />
+                                        <path id="dashboardIcon"
+                                            d="M14 12.75H7C6.59 12.75 6.25 12.41 6.25 12C6.25 11.59 6.59 11.25 7 11.25H14C14.41 11.25 14.75 11.59 14.75 12C14.75 12.41 14.41 12.75 14 12.75Z"
+                                            fill="#101839" />
+                                    </svg>
+                                    <span>Billing</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="packages.html" class="nav-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path id="dashboardIcon"
+                                            d="M10.1192 2.42048C11.2031 1.49679 12.7973 1.49679 13.8812 2.42048L15.1527 3.50402C15.3288 3.65416 15.5479 3.74489 15.7786 3.76331L17.4439 3.8962C18.8635 4.00948 19.9907 5.13674 20.104 6.55632L20.2369 8.22156C20.2553 8.4523 20.346 8.67135 20.4962 8.84753L21.5797 10.119C22.5034 11.2029 22.5034 12.7971 21.5797 13.881L20.4962 15.1524C20.346 15.3286 20.2553 15.5477 20.2369 15.7784L20.104 17.4437C19.9907 18.8632 18.8635 19.9905 17.4439 20.1038L15.7786 20.2367C15.5479 20.2551 15.3288 20.3458 15.1527 20.496L13.8812 21.5795C12.7973 22.5032 11.2031 22.5032 10.1192 21.5795L8.84775 20.496C8.67157 20.3458 8.45251 20.2551 8.22177 20.2367L6.55653 20.1038C5.13695 19.9905 4.00969 18.8632 3.89641 17.4437L3.76352 15.7784C3.74511 15.5477 3.65437 15.3286 3.50423 15.1524L2.4207 13.881C1.49701 12.7971 1.49701 11.2029 2.4207 10.119L3.50423 8.84753C3.65437 8.67135 3.74511 8.4523 3.76352 8.22156L3.89641 6.55632C4.00969 5.13674 5.13695 4.00948 6.55653 3.8962L8.22177 3.76331C8.45251 3.74489 8.67157 3.65416 8.84775 3.50402L10.1192 2.42048ZM12.7137 3.79049C12.3026 3.44012 11.6979 3.44012 11.2867 3.79049L10.0153 4.87403C9.55078 5.26985 8.97328 5.50906 8.36496 5.5576L6.69972 5.69049C6.16126 5.73346 5.73368 6.16104 5.6907 6.6995L5.55782 8.36474C5.50927 8.97306 5.27006 9.55057 4.87424 10.015L3.7907 11.2865C3.44034 11.6976 3.44034 12.3023 3.7907 12.7135L4.87424 13.9849C5.27006 14.4494 5.50927 15.0269 5.55782 15.6352L5.6907 17.3005C5.73368 17.8389 6.16126 18.2665 6.69972 18.3095L8.36496 18.4424C8.97328 18.4909 9.55078 18.7301 10.0153 19.126L11.2867 20.2095C11.6979 20.5599 12.3026 20.5599 12.7137 20.2095L13.9852 19.126C14.4496 18.7301 15.0271 18.4909 15.6355 18.4424L17.3007 18.3095C17.8392 18.2665 18.2667 17.8389 18.3097 17.3005L18.4426 15.6352C18.4911 15.0269 18.7303 14.4494 19.1262 13.9849L20.2097 12.7135C20.5601 12.3023 20.5601 11.6976 20.2097 11.2865L19.1262 10.015C18.7303 9.55057 18.4911 8.97307 18.4426 8.36474L18.3097 6.6995C18.2667 6.16104 17.8392 5.73346 17.3007 5.69049L15.6355 5.5576C15.0271 5.50906 14.4496 5.26985 13.9852 4.87403L12.7137 3.79049Z"
+                                            fill="#101839" stroke="white" stroke-width="0.2" stroke-linejoin="round" />
+                                        <path id="dashboardIcon"
+                                            d="M10.9 9.5C10.9 10.2732 10.2732 10.9 9.5 10.9C8.7268 10.9 8.1 10.2732 8.1 9.5C8.1 8.7268 8.7268 8.1 9.5 8.1C10.2732 8.1 10.9 8.7268 10.9 9.5Z"
+                                            fill="#101839" stroke="white" stroke-width="0.2" />
+                                        <path id="dashboardIcon"
+                                            d="M15.9 14.5C15.9 15.2732 15.2732 15.9 14.5 15.9C13.7268 15.9 13.1 15.2732 13.1 14.5C13.1 13.7268 13.7268 13.1 14.5 13.1C15.2732 13.1 15.9 13.7268 15.9 14.5Z"
+                                            fill="#101839" stroke="white" stroke-width="0.2" />
+                                        <path id="dashboardIcon"
+                                            d="M15.0762 8.3086C15.458 8.6268 15.5096 9.19431 15.1914 9.57616L10.1914 15.5762C9.87322 15.958 9.30571 16.0096 8.92386 15.6914C8.54201 15.3732 8.49042 14.8057 8.80863 14.4238L13.8086 8.42383C14.1268 8.04198 14.6943 7.99039 15.0762 8.3086Z"
+                                            fill="#101839" stroke="white" stroke-width="0.2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                    <span>packages</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="leaderboard.html" class="nav-link active">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path id="dashboardIcon"
+                                            d="M8.85 13C8.85 12.5305 8.46944 12.15 8 12.15C7.53056 12.15 7.15 12.5305 7.15 13V16C7.15 16.4694 7.53056 16.85 8 16.85C8.46944 16.85 8.85 16.4694 8.85 16V13ZM12.85 12C12.85 11.5305 12.4694 11.15 12 11.15C11.5306 11.15 11.15 11.5305 11.15 12V16C11.15 16.4694 11.5306 16.85 12 16.85C12.4694 16.85 12.85 16.4694 12.85 16V12ZM16.85 9.99997C16.85 9.53053 16.4694 9.14997 16 9.14997C15.5306 9.14997 15.15 9.53053 15.15 9.99997V16C15.15 16.4694 15.5306 16.85 16 16.85C16.4694 16.85 16.85 16.4694 16.85 16V9.99997ZM7 2.14997C4.8737 2.14997 3.15 3.87367 3.15 5.99997V18C3.15 20.1263 4.8737 21.85 7 21.85H17C19.1263 21.85 20.85 20.1263 20.85 18V5.99997C20.85 3.87367 19.1263 2.14997 17 2.14997H7ZM19.15 5.99997V6.99997C19.15 7.08281 19.0828 7.14997 19 7.14997H17C16.9172 7.14997 16.85 7.08281 16.85 6.99997V3.99997C16.85 3.91713 16.9172 3.84997 17 3.84997C18.1874 3.84997 19.15 4.81256 19.15 5.99997ZM15.156 3.84997C15.152 3.89946 15.15 3.94949 15.15 3.99997V6.99997C15.15 8.0217 15.9783 8.84997 17 8.84997H19C19.0505 8.84997 19.1005 8.84795 19.15 8.84397V18C19.15 19.1874 18.1874 20.15 17 20.15H7C5.81259 20.15 4.85 19.1874 4.85 18V5.99997C4.85 4.81256 5.81259 3.84997 7 3.84997H15.156Z"
+                                            fill="#101839" stroke="white" stroke-width="0.2" />
+                                    </svg>
+                                    <span>leaderboard</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Sidebar End -->
+
+        <!-- Dashboard Main Content Start -->
+        <div class="dashboardDesk-content-main">
+            <nav class="dashboard-navbar navbar navbar-expand-lg dashConent-header">
+                <!-- Mobile Toggle -->
+                <a class="btn dashnav-mobile-toggle" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                    aria-controls="offcanvasExample">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="24" height="24" x="0" y="0" viewBox="0 0 512 512"
+                        style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                        <g>
+                            <path
+                                d="M128 102.4c0-14.138 11.462-25.6 25.6-25.6h332.8c14.138 0 25.6 11.462 25.6 25.6S500.538 128 486.4 128H153.6c-14.138 0-25.6-11.463-25.6-25.6zm358.4 128H25.6C11.462 230.4 0 241.863 0 256c0 14.138 11.462 25.6 25.6 25.6h460.8c14.138 0 25.6-11.462 25.6-25.6 0-14.137-11.462-25.6-25.6-25.6zm0 153.6H256c-14.137 0-25.6 11.462-25.6 25.6 0 14.137 11.463 25.6 25.6 25.6h230.4c14.138 0 25.6-11.463 25.6-25.6 0-14.138-11.462-25.6-25.6-25.6z"
+                                fill="#5159A7" opacity="1" data-original="#5159A7" class=""></path>
+                        </g>
+                    </svg>
+                </a>
+                <span class="dashConent-name">Leaderboard</span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="34" height="34" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><g data-name="Layer 2"><path d="M256 0C114.62 0 0 114.62 0 256s114.62 256 256 256 256-114.62 256-256S397.38 0 256 0zm0 78a91.89 91.89 0 1 1-91.89 91.89A91.89 91.89 0 0 1 256 78zm153.62 306.08a200 200 0 0 1-307.24 0 25.25 25.25 0 0 1-5.13-22.22 163.57 163.57 0 0 1 57.56-89.32 24.77 24.77 0 0 1 30-.43c19 14.13 43.91 22.69 71.15 22.69s52.14-8.56 71.15-22.69a24.77 24.77 0 0 1 30 .43 163.57 163.57 0 0 1 57.56 89.32 25.25 25.25 0 0 1-5.05 22.22z" data-name="Social Icon" fill="#5159a7" opacity="1" data-original="#000000" class=""></path></g></g></svg>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="dashConent-header-btn ms-auto">
+                        <button class="btn reset-key-btn">Reset key</button>
+                        <button class="btn signOut-btn">
+                            <span>Sign out</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
+                                fill="none">
+                                <path id="signoutIcon" d="M10.5 3.75L15.75 9M15.75 9L10.5 14.25M15.75 9L2.25 9"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+
+                </div>
+            </nav>
+            <div class="container-fluid">
+                <div class="dashboard-content">
+                    <div class="leaderboard-card">
+                        <h1 class="dashboard-head">Leaderboard</h1>
+                        <div class="leaderboard-table-overflow">
+                            <table class="leaderboard-table">
+                                <thead>
+                                    <tr>
+                                        <th>Rank</th>
+                                        <th>Username</th>
+                                        <th>Country</th>
+                                        <th>Points</th>
+                                        <th>Rooms</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><img src="assets/images/dashboard/medal.svg" alt=""></td>
+                                        <td>
+                                            <div class="user-image-details">
+                                                <img class="user-image" src="assets/images/dashboard/user-1.png" alt="">
+                                                <h2 class="TableUser-name">Cameron Williamson</h2>
+                                                <span class="TableUser-code">[0xD]{[GOD]</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <img src="assets/images/dashboard/flag-1.png" alt="Flag">
+                                        </td>
+                                        <td>
+                                            <span class="TableUser-info">126125</span>
+                                        </td>
+                                        <td>
+                                            <span class="TableUser-info">126</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets/images/dashboard/medal-2.svg" alt=""></td>
+                                        <td>
+                                            <div class="user-image-details">
+                                                <img class="user-image" src="assets/images/dashboard/user-2.png" alt="">
+                                                <h2 class="TableUser-name">Esther Howard</h2>
+                                                <span class="TableUser-code">[0xD]{[GOD]</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <img src="assets/images/dashboard/flag-2.png" alt="Flag">
+                                        </td>
+                                        <td>
+                                            <span class="TableUser-info">126125</span>
+                                        </td>
+                                        <td>
+                                            <span class="TableUser-info">126</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="assets/images/dashboard/medal-3.svg" alt=""></td>
+                                        <td>
+                                            <div class="user-image-details">
+                                                <img class="user-image" src="assets/images/dashboard/user-3.png" alt="">
+                                                <h2 class="TableUser-name">Guy Hawkins</h2>
+                                                <span class="TableUser-code">[0xD]{[GOD]</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <img src="assets/images/dashboard/flag-3.png" alt="Flag">
+                                        </td>
+                                        <td>
+                                            <span class="TableUser-info">126125</span>
+                                        </td>
+                                        <td>
+                                            <span class="TableUser-info">126</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>#4</td>
+                                        <td>
+                                            <div class="user-image-details">
+                                                <img class="user-image" src="assets/images/dashboard/user-4.png" alt="">
+                                                <h2 class="TableUser-name">Brooklyn Simmons</h2>
+                                                <span class="TableUser-code">[0xD]{[GOD]</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <img src="assets/images/dashboard/flag-4.png" alt="Flag">
+                                        </td>
+                                        <td>
+                                            <span class="TableUser-info">126125</span>
+                                        </td>
+                                        <td>
+                                            <span class="TableUser-info">126</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>#5</td>
+                                        <td>
+                                            <div class="user-image-details">
+                                                <img class="user-image" src="assets/images/dashboard/user-5.png" alt="">
+                                                <h2 class="TableUser-name">Brooklyn Simmons</h2>
+                                                <span class="TableUser-code">[0xD]{[GOD]</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <img src="assets/images/dashboard/flag-5.png" alt="Flag">
+                                        </td>
+                                        <td>
+                                            <span class="TableUser-info">126125</span>
+                                        </td>
+                                        <td>
+                                            <span class="TableUser-info">126</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>#6</td>
+                                        <td>
+                                            <div class="user-image-details">
+                                                <img class="user-image" src="assets/images/dashboard/user-1.png" alt="">
+                                                <h2 class="TableUser-name">Brooklyn Simmons</h2>
+                                                <span class="TableUser-code">[0xD]{[GOD]</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <img src="assets/images/dashboard/flag-6.png" alt="Flag">
+                                        </td>
+                                        <td>
+                                            <span class="TableUser-info">126125</span>
+                                        </td>
+                                        <td>
+                                            <span class="TableUser-info">126</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>#7</td>
+                                        <td>
+                                            <div class="user-image-details">
+                                                <img class="user-image" src="assets/images/dashboard/user-2.png" alt="">
+                                                <h2 class="TableUser-name">Brooklyn Simmons</h2>
+                                                <span class="TableUser-code">[0xD]{[GOD]</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <img src="assets/images/dashboard/flag-2.png" alt="Flag">
+                                        </td>
+                                        <td>
+                                            <span class="TableUser-info">126125</span>
+                                        </td>
+                                        <td>
+                                            <span class="TableUser-info">126</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>#8</td>
+                                        <td>
+                                            <div class="user-image-details">
+                                                <img class="user-image" src="assets/images/dashboard/user-3.png" alt="">
+                                                <h2 class="TableUser-name">Brooklyn Simmons</h2>
+                                                <span class="TableUser-code">[0xD]{[GOD]</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <img src="assets/images/dashboard/flag-5.png" alt="Flag">
+                                        </td>
+                                        <td>
+                                            <span class="TableUser-info">126125</span>
+                                        </td>
+                                        <td>
+                                            <span class="TableUser-info">126</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+
+                            </table>
+                        </div>
+
+                        <nav class="leaderboard-table-pagination" aria-label="Page navigation">
+                            <ul class="pagination">
+                              <li class="page-item">
+                                <a class="page-link active" href="#">1</a>
+                              </li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">2</a>
+                              </li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">3</a>
+                              </li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">4</a>
+                              </li>
+                              <!-- Add ellipsis if needed -->
+                              <li class="page-item">
+                                <span class="page-link">...</span>
+                              </li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">7</a>
+                              </li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">8</a>
+                              </li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">9</a>
+                              </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Dashboard Main Content End -->
+        </div>
+        </section>
+
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
