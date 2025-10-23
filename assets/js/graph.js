@@ -388,7 +388,13 @@ const marketActivityChart = new Chart(ctxMarketActivity, {
             const tooltip = chart.tooltip;
             const chartArea = chart.chartArea;
 
-            if (tooltip.opacity === 0) {
+            // Check if tooltip exists and has the opacity property
+            if (!tooltip || tooltip.opacity === 0) {
+                return;
+            }
+
+            // Additional safety check for dataPoints
+            if (!tooltip.dataPoints || tooltip.dataPoints.length === 0) {
                 return;
             }
 
